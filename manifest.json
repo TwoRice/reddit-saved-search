@@ -1,0 +1,23 @@
+{
+    
+    "name": "Reddit Saved Search",
+    "description": "Search and filter your Reddit Saved by title, subreddit and user",
+    
+    "manifest_version": 3,
+    "version": "0.0.1",
+
+    "author": "Rory Magowan",
+
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://*.reddit.com/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs"]
+}
